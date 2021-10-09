@@ -48,3 +48,15 @@ const isPermuation = (a, b) => {
     return true;
 };
 console.log(isPermuation("abc", "bca"));
+
+/**
+ * @description finds if a string is a palindrome permutation
+ */
+const palindromePermutation = (a, b) => {
+    const isPalindrome = (a) => a === a.reverse();
+    if (isPalindrome && isPermuation(a, b)) {
+        return true;
+    } else {
+        return false;
+    }
+};
